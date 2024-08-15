@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" async></script>
+
     <title>Ingles</title>
 </head>
 <body>
@@ -51,15 +54,16 @@
     </header>
 
     <main>
-        <h2 class="titulo-h2">Assinale a palavra em ingles que corresponda com a imagem.</h2>
+        <!-- <h2 class="titulo-h2">Assinale a palavra em ingles que corresponda com a imagem.</h2>
 
         <div class="grid-main">
-            <div class="div-img-principal">
+            <div class="div-img-principal hide">
                 <img class="img-dog" src="./img/Labrador-retriever.jpg" alt="Foto de um cachorro">
+                <img class="img-dog" src="./img/gato.jpeg" alt="Foto de um gato">
             </div>
 
-            <div class="div-grid-main">
-                <button class="button-label">
+            <div class="div-grid-main hide">
+                <button onclick="progress()" class="button-label">
                     <h2>Dog</h2>
                 </button>
 
@@ -75,7 +79,51 @@
                     <h2>Dinner</h2>
                 </button>
             </div>
-        </div>
+
+            <div class="button-controls">
+                <button class="button-label start"><h2>Começar quiz</h2></button>
+                <button class="button-label next"><h2>Proxima Pergunta</h2></button>
+            </div>
+        </div> -->
+
+        <!-- <div class="box">
+            <div class="box-circle">
+                <svg>
+                    <circle> fill="blue" stroke="black" stroke-width="2px"</circle>
+                    <circle cx="70" cy="70" r="70"></circle> 
+                    <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+            </div>
+            <div class="number">
+                <h3></h3>
+            </div>
+        </div> -->
+        <div class="container">
+            <div class="questions-container hide">
+
+              <span class="question">Pergunta aqui?</span>
+
+              <div class="image-container"></div>
+
+              <div class="answers-container">
+
+                <button class="answer button">Resposta 1</button>
+                <button class="answer button">Resposta 2</button>
+                <button class="answer button">Resposta 3</button>
+                <button class="answer button">Resposta 4</button>
+
+              </div>
+            </div>
+
+            <div class="controls-container">
+
+              <button class="start-quiz button">Começar Quiz!</button>
+              <button class="next-question button hide">Próxima pergunta</button>
+
+            </div>
+          </div>
     </main>
+
+    
 </body>
 </html>
